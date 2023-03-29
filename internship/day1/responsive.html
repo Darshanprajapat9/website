@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+ background: linear-gradient( orangered ,white , green);
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 200px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #82e28f;
+  height: 200px; 
+}
+
+
+
+
+footer {
+  background-color: #161616;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*form style*/
+ table{
+ text-align: center;
+ height: 500px;
+ width: 600px;
+ border: 2px solid black;
+ margin-left: 400px;
+ border-radius: 10px;
+ box-shadow: 2px 4px 2px black;
+ }
+ table ,tr{
+    text-align: center;
+ }
+form{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    color: black;
+    }
+    .name{
+        width: 250px;
+        height: 30px;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        text-align: center;
+       border-radius: 10px;
+       box-shadow: 2px 4px 2px black;
+    }
+    .fname{
+        width: 250px;
+        height: 30px;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 2px 4px 2px black;
+        border-radius: 10px;
+    }
+  .gender{
+    margin: 10px;
+      font-size: 25px;
+      color: rgb(20, 5, 5);
+      font-weight: 900;
+    
+  }
+  .dob{
+    margin: 10px;
+    font-size: 15px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px black;
+  }
+  .email{
+    width: 250px;
+        height: 30px;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 2px 4px 2px black;
+        border-radius: 10px;
+  }
+  .hobbise{
+    margin: 10px;
+      font-size: 25px;
+      color: black;
+      font-weight: 900;
+  }
+   .file{
+    margin: 10px;
+    font-size: 15px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px black;
+   }
+   .submit{
+    margin: 10px;
+    margin-right: 150px;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px black;
+   background-color: rgb(255, 255, 255);
+   }
+
+   @media (max-width: 950px) {
+  table ,form {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Hello World</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Name</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quaerat animi debitis excepturi cum, quas omnis consequuntur quidem perspiciatis, autem illum laborum voluptatum architecto recusandae temporibus doloremque pariatur maiores asperiores.</p>
+  
+  </article>
+</section>
+
+<footer>
+  <p>&copy; created by Darshan Prajapat &#128516;</p>
+</footer>
+
+<br>
+<br>
+
+
+<table>
+   
+    <form>
+      <tr>
+        <td colspan="2">  <h1 style="text-align: center;">Registration Form</h1></td>
+      </tr>
+    <tr>
+        <td> 
+            <lable  for ="fullname" >Name :</lable></td>
+      <td>    <input type="text" placeholder="please fill your name" class="name" id="fullname"></td>
+    </tr>
+    <tr>
+        <td>    <lable  for ="fathername" >Father  Name</lable></td>
+        <td> <input type="text" placeholder="please fill your father name" class="fname" id="fathername"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="gender">Gender</label>
+        </td>
+        <td> <input type="radio" value="male" class="gender" name="gender" id="gender">Male
+            <input type="radio" value="female" class="gender" name="gender" id="gender">FeMale
+            <input type="radio" value="male" class="gender" name="gender" id="gender">Other
+        </td>
+    </tr>
+    <tr>
+        <td><label  for="Dob">Date Of Birth</label></td>
+        <td>  <input type="date"   value="dob" id="Dob" class="dob" name="DOB"></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email"placeholder="please fill the email" name="email" id="email" class="email" ></td>
+    </tr>
+    <tr>
+        <td> <label for="hobbise" >Hobbise</label></td>
+        <td><input type="checkbox" value="Cricket" name="hobbise" id="hobbise" class="hobbise">Cricket
+            <input type="checkbox" value="Drama" name="hobbise" id="hobbise" class="hobbise">Drama
+            <input type="checkbox" value="Reading" name="hobbise" id="hobbise" class="hobbise">Reading
+            </td>
+    </tr>
+    <tr>
+        <td><lable for="file">File</lable></td>
+        <td>
+            <input type="file" id="file" placeholder="upload" id="file" class="file" ></td>
+    </tr>
+    <td>
+        <td colspan="2"><input type="submit"  class="submit" value="Submit"></td>
+    </td>
+</form>
+</table>
+ 
+
+<svg width="200" height="200">
+    <circle cx="100" cy="100" r="100" stroke="green" stroke-width="4" fill="yellow" />
+  </svg>
+  <svg width="400" height="100">
+    <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:4;stroke:rgb(0,0,0)" />
+  </svg>
+  <svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+  </svg>
+
+
+  <br>
+
+  <video width="320" height="240" controls>
+  <source src="./mahadev-status-video-231.mp4" type="video/mp4">
+  <source src="./mahadev-status-video-231.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<br>
+<object width="100%" height="500px" data="Day1.html"></object>
+
+</body>
+</html>
+
