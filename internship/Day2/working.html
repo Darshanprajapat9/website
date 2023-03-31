@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 45px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  justify-content: space-between;
+}
+
+li a:hover {
+  background-color: #111;
+}
+    .box {
+      background: url('https://picsum.photos/200/300')no-repeat;
+      border: 2px solid black;
+      background-size: cover;
+    }
+    
+   .box > .boxin {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.6;
+    }
+    
+    .box >.boxin > p {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    p::first-letter{
+        color: red;
+        font-size: xx-large;
+    }
+    p::first-line{
+        color: rgb(0, 66, 249);
+        font-size:x-large;
+    }
+ 
+
+  input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+   background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.column {
+  float: left;
+  width: 32.33%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:778px) {
+  
+  .column {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width:945px){
+
+    }
+    .column {
+    width: 30%;
+  }
+
+    </style>
+    </head>
+    <body>
+    
+        
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+         
+          <br>
+
+    <div class="box">
+      <div class="boxin">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex suscipit incidunt reprehenderit quis ut sunt culpa facilis praesentium beatae iure modi ipsa, voluptates quod ullam ducimus exercitationem fuga accusamus saepe?</p>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+      </div>
+
+
+      <form>
+            
+        <input type="text" name="search" placeholder="Search..">
+           
+      </form>
+
+    </body>
+    </html> 
