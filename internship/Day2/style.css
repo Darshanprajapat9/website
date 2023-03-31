@@ -1,0 +1,160 @@
+body{
+    font-family: "Sofia", sans-serif;
+      
+}
+#para1 {
+text-align: center;
+color: red;
+font-size: 35px;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 3px darkblue;
+}
+
+/* this background property */
+
+/*background -color*/
+div{
+background-color: blue;
+}
+
+div.first {
+opacity: 0.1;
+background-color: green;
+}
+
+div.second {
+opacity: 0.3;
+background-color: rgb(255, 0, 208);
+}
+
+div.third {
+opacity: 0.6;
+background-color: red;
+}
+.bgimg{
+height: 40px;
+color: white;
+font-size: 20px;
+background-image: url("https://picsum.photos/200/300");
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+/*background property*/
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: hidden  hidden solid hidden ; border-width: 10px;}
+p.double {border-style: double;
+ border-radius: 10px;
+text-shadow: 2px 2px black;
+outline-style: solid;
+outline-color: red;
+outline-width: thin;
+
+}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+
+
+
+.icon{
+width: 50px;
+width: 100%;
+padding: 10px 20px;
+color: white;
+font-size: 35px;
+text-align-last: right ;
+}
+
+/* unvisited link */
+.link{
+font-size: 35px;
+padding: auto;
+}
+.link a:link {
+color: red;
+}
+
+/* visited link */
+.link a:visited {
+color: green;
+}
+
+/* mouse over link */
+.link a:hover {
+color: hotpink;
+}
+
+/* selected link */
+.link a:active {
+color: blue;
+}
+
+/*table styleing*/
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+td:hover{
+background-color:#ddd;
+}
+
+span.a {
+display: inline; /* the default for span */
+width: 100px;
+height: 100px;
+padding: 5px;
+border: 1px solid blue;  
+background-color: yellow; 
+}
+
+span.b {
+display: inline-block;
+width: 100px;
+height: 100px;
+padding: 5px;
+border: 1px solid blue;    
+background-color: yellow; 
+}
+
+span.c {
+display: block;
+width: 100px;
+height: 100px;
+padding: 5px;
+border: 1px solid blue;    
+background-color: yellow; 
+
+}
+
+/*combinator*/
+.comb1 p {
+    background-color: yellow;
+  }
+  .comb2 >section > p {
+    background-color: rgb(255, 255, 15);
+    color: blue;
+  }
+h4::first-line{
+   color: rgb(0, 0, 0);
+   font-variant: small-caps;
+   font-size: 25px;
+  }
+  h4::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+  }
+
+@media(max-width:768px){
+.icon{
+    width: 100%;
+    color: red;
+    display: block;
+}
+}
