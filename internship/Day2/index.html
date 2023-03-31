@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="device-width,initial-scale=1.0" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Piazzolla:wght@200;300;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="para1">Darshan Prajapat</p>
+
+<p>This paragraph is not affected by the style.</p>
+
+<!--  Background propertise
+
+In these chapters, you will learn about the following CSS background properties:
+
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+    background (shorthand property)
+
+-->
+<!--1 Background-color-->
+<div class="first">
+    <h1>opacity 0.1</h1>
+  </div>
+  
+  <div class="second">
+    <h1>opacity 0.3</h1>
+  </div>
+  
+  <div class="third">
+    <h1>opacity 0.6</h1>
+  </div>
+  
+  <div>
+    <h1>opacity 1 (default)</h1>
+  </div>
+
+  <!--2 background-image-->
+  
+  <p class="bgimg">Background-image property</p>
+
+  <!--border-->
+
+  <p class="dotted">A dotted border.</p>
+  <p class="dashed">A dashed border.</p>
+  <p class="solid">A solid border.</p>
+  <p class="double">A double border.</p>
+  <p class="groove">A groove border.</p>
+  <p class="ridge">A ridge border.</p>
+
+<div  class="icon">
+ 
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+</div>
+
+<div class="link">
+    <p><b><a href="https://github.com/Darshanprajapat9/website/tree/main/internship/day1" target="_blank">This is a link</a></b></p>
+</div>
+
+
+<table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    <th>Savings</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table>
+
+<!----disaply Property-->
+  
+<h1>The display Property</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+<!---combinator-->
+<!---four type  
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+
+-->
+<br>
+<br>
+<!--1-->
+
+<div class="comb1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<h6>Paragraph 4. Not in a div.</h6>
+<h6>Paragraph 5. Not in a div.</h6>
+
+
+<!--2-->
+
+
+<div class="comb2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<h6>Paragraph 4. Not in a div.</h6>
+<h6>Paragraph 5. Not in a div.</h6>
+
+
+<br><br>
+<!---Pseudo-elements-->
+
+<h4 class="pseudoelement">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</h4>
+
+</body>
+</html>
