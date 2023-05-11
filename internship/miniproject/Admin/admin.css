@@ -1,0 +1,375 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Piazzolla:wght@200;300;900&family=Source+Sans+Pro:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1535px;
+    height: 100vh;
+    display: flex;
+}
+.leftside{
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+}
+.leftside .adminlogo{
+    display: flex;
+    padding :13px 0 10px 20px;
+    border-bottom: 1px solid rgb(35, 35, 35);   
+}
+.leftside .adminlogo img{
+    width: 35px;
+    height: 35px;
+}
+.leftside .adminlogo h3{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 7px 10px;
+    color: rgba(255,255,255,.8);
+}
+.leftside .adminname{
+    display: flex;
+    padding: 13px 0  10px 20px;
+    border-bottom: 1px solid rgb(35, 35, 35);  
+}
+.leftside .adminname img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.leftside .adminname h3{
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 7px 10px;
+    color: rgba(255,255,255,.8);
+}
+.leftside .input-group{
+    width: 220px;
+}
+.leftside .input-group .form-control{
+    border: none;   
+    border: 1px solid #56606a;
+     background-color: #3f474e;
+}
+  .input-group-text {
+    background-color: #3f474e;
+    border: 1px solid #56606a;
+ }
+
+.leftside .deshbord {
+    margin: 10px;
+    position: relative;
+  }
+.leftside .deshbord .deshboard1{
+    height: 40px;
+    width: 220px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+}
+.leftside .deshbord .deshboard1:hover{
+    background-color:rgb(0, 169, 225);
+}
+.leftside .deshbord .desh2{
+    height: 40px;
+    width: 220px;
+    padding-left: 60px;
+    background-color:  rgb(75, 84, 92);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;    
+}
+.leftside .deshbord  i{
+    position: absolute;
+    top: 7px;
+    left: 26px;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgba(255,255,255,.8);
+}
+.leftside .weight{
+    display: flex;
+    height: 40px;
+    width: 220px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    margin-left: 12px;
+    background-color: #343a40;
+}
+.leftside .weight:hover{
+    background-color: rgb(0, 169, 225);
+    
+}
+.leftside .weight i{
+    margin-left: 22px;
+    color: rgba(255,255,255,.8);
+}
+.leftside .weight h3{
+    margin-left: 15px;
+    font-size: 16px;
+    color: rgba(255,255,255,.8);
+}
+.leftside .layout {
+    margin: 10px;
+    position: relative;
+}
+.leftside .layout .layout1{
+    height: 40px;
+    width: 220px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+}
+.leftside .layout .layout1:hover{
+    background-color:rgb(0, 169, 225);
+}
+.leftside .layout .lay2{
+    height: 40px;
+    width: 220px;
+    margin-top: 10px;
+    padding-left: 55px;
+    background-color:  rgb(75, 84, 92);
+    border: none;
+    color: rgba(255,255,255,.8);
+    border-radius: 5px;
+    font-size: 16px;
+}
+.leftside .layout  i{
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    color: rgba(255,255,255,.8);
+    font-weight: 800;
+    font-size: 20px;
+}
+.leftside .charts {
+    margin: 10px;
+    position: relative;
+}
+.leftside .charts .charts1{
+    height: 40px;
+    width: 220px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+}
+.leftside .charts .charts1:hover{
+    background-color:rgb(0, 169, 225);
+}
+.leftside .charts .chat2{
+    height: 40px;
+    width: 220px;
+    margin-top: 10px;
+    padding-left: 55px;
+    color: rgba(255,255,255,.8);
+    background-color:  rgb(75, 84, 92);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.leftside .charts  i{
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    color: rgba(255,255,255,.8);
+    font-weight: 800;
+    font-size: 20px;
+}
+.leftside .uielements {
+    margin: 10px;
+    position: relative;
+}
+.leftside .uielements .uielements1{
+    height: 40px;
+    width: 220px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+}
+.leftside .uielements .uielements1:hover{
+    background-color:rgb(0, 169, 225);
+}
+.leftside .uielements .uielements2{
+    height: 40px;
+    width: 220px;
+    margin-top: 10px;
+    padding-left: 55px;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.leftside .uielements  i{
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    color: rgba(255,255,255,.8);
+    font-weight: 800;
+    font-size: 20px;
+}
+.leftside .Forms {
+    margin: 10px;
+    position: relative;
+}
+.leftside .Forms .Forms1{
+    height: 40px;
+    width: 220px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+}
+.leftside .Forms .Forms1:hover{
+    background-color:rgb(0, 169, 225);
+}
+.leftside .Forms .Forms2{
+    height: 40px;
+    width: 220px;
+    margin-top: 10px;
+    padding-left: 55px;
+    color: rgba(255,255,255,.8);
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.leftside .Forms  i{
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    color: rgba(255,255,255,.8);
+    font-weight: 800;
+    font-size: 20px;
+}
+.leftside .logout{
+    display: flex;
+    height: 40px;
+    width: 220px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    margin-left: 12px;
+    background-color: #343a40;
+}
+.leftside .logout:hover{
+    background-color: rgb(0, 169, 225);
+    
+}
+.leftside .logout i{
+    margin-top: 7px;
+    margin-left: 22px;
+    font-size: 20px;
+    color: rgba(255,255,255,.8);
+}
+.leftside .logout h3 a{
+    margin-left: 15px;
+    font-size: 16px;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+}
+
+
+
+
+/**right side navbar*/
+
+.rightside{
+    width: 1260px;
+    height: 100%;
+    background-color: #f4f6f9;
+}
+
+.rightside .navbar{
+   padding-left: 25px;
+   height: 70px;
+ background-color: white;
+}
+.rightside .navbar .navbar-brand i{
+    font-size: 26px;
+    color: #343a40;
+}
+.rightside .navbar .navbar-brand p{
+    color: #343a40;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.rightside .navbar .navbar-nav{
+    padding-right: 10px;
+}
+.rightside .navbar .navbar-nav .nav-item{
+    padding:10px;
+    color: #343a40;
+}
+.rightside .navbar .navbar-nav .nav-item .nav-link{
+    color: #343a40;
+}
+.rightside .list-group-item {
+  position: relative;
+}
+.rightside .list-group-item .adduser{
+    position: absolute;
+    right: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
