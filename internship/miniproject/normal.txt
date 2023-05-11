@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+ 
+
+    <title>Hello, world!</title>
+  </head>
+<body>
+    <?php
+
+        if (isset($_GET['pageno'])) {
+            $pageno = $_GET['pageno'];
+        } else {
+            $pageno = 1;
+        }
+        $pagerecords = 3;
+        $offset = ($pageno-1) * $pagerecords;
+
+            include 'conn.php';
+
+        $total_pages_sql = "SELECT COUNT(*) FROM user";
+        $result = mysqli_query($conn,$total_pages_sql);
+        $total_rows = mysqli_fetch_array($result)[0];
+        $total_pages = ceil($total_rows / $pagerecords);
+
+        $sql = "SELECT * FROM user LIMIT $offset, $pagerecords";
+        $res_data = mysqli_query($conn,$sql);
+        while($row = mysqli_fetch_array($res_data)){
+            //here goes the data?>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                   <td>ID</td> 
+                   <td>Name</td>
+                   <td>Date of Birth</td>
+                   <td>Email</td>
+                   <td>Password</td>
+                <tr>
+            </thead>
+            <tbody>
+       
+                    
+                <tr>
+                    <td><?php echo $row['id']?></td>
+                    <td><?php echo $row['name']?></td>
+                    <td><?php echo $row['dob']?></td>
+                    <td><?php echo $row['email']?></td>
+                    <td><?php echo $row['passwords']?></td>
+                </tr> 
+            </tbody>
+        </table>
+            </div>
+        </div>
+    </div>
+           
+        <?php 
+        }
+        mysqli_close($conn);
+    ?>
+    <ul class="pagination">
+        <li><a href="?pageno=1">First</a></li>
+        <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
+            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Prev</a>
+        </li>
+        <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
+            <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Next</a>
+        </li>
+        <li><a href="?pageno=<?php echo $total_pages; ?>">Last</a></li>
+    </ul>
+</body>
+</html>
+
+
