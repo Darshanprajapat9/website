@@ -1,0 +1,14 @@
+ (1) . for user 
+
+a user register
+a user login
+a user deshboard
+a user logout
+
+(2) for admin
+
+a admin login 
+a admin deshboard
+a dynamic table add
+a admin deshboard directly curd operation
+a admin logout
